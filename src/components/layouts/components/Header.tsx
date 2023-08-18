@@ -7,7 +7,7 @@ import { ROUTE } from '@/types';
 
 const Header = () => {
   return (
-    <header className="h-header z-header fixed left-0 top-0 flex w-full items-center justify-between bg-black/5 backdrop-blur-lg">
+    <header className="h-header z-header fixed left-0 top-0 flex w-full items-center justify-between  backdrop-blur-lg">
       <div className={'container flex items-center justify-between'}>
         <div className="min-w-[150px]">
           <Link href={ROUTE.HOME}>
@@ -17,7 +17,7 @@ const Header = () => {
         <>
           <div className=""></div>
           <div className="min-w-[150px]">
-            <Button fullWidth variant="gradient">
+            <Button fullWidth size="lg" variant="filled">
               Get Started
             </Button>
           </div>

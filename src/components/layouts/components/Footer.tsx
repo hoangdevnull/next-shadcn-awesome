@@ -10,7 +10,7 @@ const Footer = () => {
       <footer>
         <Separator />
         <div className="py-6 text-sm">
-          <p className="text-center text-sm">Copyright © 2023 - FanChain. All Rights Reserved.</p>
+          <p className="text-center text-sm">Copyright © 2023 - Var-Meta. All Rights Reserved.</p>
         </div>
       </footer>
     </>

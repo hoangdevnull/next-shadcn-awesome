@@ -20,7 +20,7 @@ const Providers: FCC = ({ children }) => {
   const [_queryClient] = React.useState(() => queryClient);
   return (
     <>
-      <ThemeProvider attribute="class" defaultTheme="dark">
+      <ThemeProvider attribute="class" defaultTheme="light">
         <QueryClientProvider client={_queryClient}>
           {children}
           <ReactQueryDevtools initialIsOpen />

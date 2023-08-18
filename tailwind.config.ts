@@ -54,9 +54,7 @@ module.exports = {
         primary: {
           DEFAULT: 'hsla(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))',
-          purple: 'hsl(var(--primary-purple))',
-          gradient:
-            'var(--primary-gradient, linear-gradient(134deg, rgba(205, 61, 255, 0.90) 0%, rgba(205, 61, 255, 0.90) 0.01%, #FE10F4 100%, #FE10F4 100%))',
+          main: 'hsl(var(--primary-main))',
         },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',

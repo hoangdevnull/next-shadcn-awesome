@@ -32,7 +32,7 @@ const MyApp: FC<AppPropsWithLayout> = (props) => {
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content="@fanchain" />
+        <meta name="twitter:creator" content="@Var-Meta" />
         <meta name="twitter:title" content={siteConfig.name} />
         <meta name="twitter:description" content={siteConfig.description} />
         <meta name="twitter:image" content={`${siteConfig.url}/og.jpg`} />
