@@ -37,7 +37,7 @@ const NavigationMenuItem = NavigationMenuPrimitive.Item;
 const navigationMenuTriggerStyle = cva(
   cn(
     'after:contents-[""] after:w-0 after:h-[1px] after:bottom-0 after:absolute after:left-0 after:bg-accent-foreground after:transition-[width]',
-    'group relative inline-flex h-10 w-max items-center justify-center mx-4 rounded-md py-2 font-light text-sm duration-500 hover:after:w-1/3 hover:text-accent-foreground focus:after:w-1/3 focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:after:w-1/3 data-[state=open]:after:w-1/3'
+    'group relative inline-flex h-10 w-max items-center justify-center mx-4 rounded-md py-2 font-normal text-sm duration-500 hover:after:w-1/3 hover:text-accent-foreground focus:after:w-1/3 focus:text-accent-foreground focus:outline-none focus:outline-0 disabled:pointer-events-none disabled:opacity-50 data-[active]:after:w-1/3 data-[state=open]:after:w-1/3'
   )
 );
 

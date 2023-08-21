@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
 export const inputVariants = cva(
   cn(
     'border-input border bg-transparent ring-offset-background placeholder:text-muted-foreground',
-    'focus-visible:ring-ring flex w-full file:border-0 file:bg-transparent focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 placeholder:text-gray-500'
+    'focus-visible:ring-ring flex w-full file:border-0 file:bg-transparent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 placeholder:text-gray-500'
   ),
   {
     variants: {
@@ -16,8 +16,8 @@ export const inputVariants = cva(
         filled: 'bg-background',
       },
       inputSize: {
-        default: 'h-10 px-3 py-2 text-sm rounded-md file:text-sm file:font-medium',
-        lg: 'h-12 px-3 py-2 text-sm rounded-lg file:text-sm file:font-medium',
+        default: 'h-12 px-3 py-2 text-sm rounded-sm file:text-sm file:font-medium',
+        sm: 'h-10 px-3 py-2 text-sm rounded-sm file:text-sm file:font-medium',
       },
     },
     defaultVariants: {

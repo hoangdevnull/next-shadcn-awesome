@@ -5,6 +5,8 @@ import Logo from '@/components/Logo';
 import { Button } from '@/components/ui/button';
 import { ROUTE } from '@/types';
 
+import Navbar from './Navbar';
+
 const Header = () => {
   return (
     <header className="h-header z-header fixed left-0 top-0 flex w-full items-center justify-between  backdrop-blur-lg">
@@ -15,7 +17,9 @@ const Header = () => {
           </Link>
         </div>
         <>
-          <div className=""></div>
+          <div className="">
+            <Navbar />
+          </div>
           <div className="min-w-[150px]">
             <Button fullWidth size="lg" variant="filled">
               Get Started

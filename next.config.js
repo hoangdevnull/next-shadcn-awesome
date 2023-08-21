@@ -15,8 +15,7 @@ const withPWA = require('@ducanh2912/next-pwa').default({
 const nextConfig = {
   // output: 'export',
   images: {
-    domains: ['var-tech.s3.ap-southeast-1.amazonaws.com', 'www.computerhope.com', 'var-tech.s3.amazonaws.com'],
-    unoptimized: true,
+    domains: [],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 1800,

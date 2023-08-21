@@ -47,7 +47,13 @@ const MyApp: FC<AppPropsWithLayout> = (props) => {
       <div>
         <Providers>{getLayout(<Component {...pageProps} />)}</Providers>
         <TailwindIndicator />
-        <NextNProgress color="#fe10f4" startPosition={0.3} stopDelayMs={200} height={3} showOnShallow={true} />
+        <NextNProgress
+          color="hsl(var(--primary-main))"
+          startPosition={0.3}
+          stopDelayMs={200}
+          height={3}
+          showOnShallow={true}
+        />
       </div>
     </>
   );

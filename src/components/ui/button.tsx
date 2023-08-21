@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
 import { Icons } from '../icons';
 
 const buttonVariants = cva(
-  'inline-flex items-center active:scale-90 justify-center rounded-lg text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50',
+  'inline-flex items-center active:scale-90 justify-center rounded-sm text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50',
   {
     variants: {
       variant: {
@@ -22,8 +22,8 @@ const buttonVariants = cva(
       size: {
         default: 'h-10 px-4 py-2',
         sm: 'h-8 px-3 text-xs',
-        lg: 'h-12 rounded-lg px-6',
-        icon: 'h-10 w-10 rounded-lg active:scale-100',
+        lg: 'h-12 rounded-sm px-6',
+        icon: 'h-10 w-10 rounded-sm active:scale-100',
       },
     },
     defaultVariants: {
