@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  frontend:
+    container_name: frontend
+    build:
+      dockerfile: ./Dockerfile
+      args:
+        NEXT_PUBLIC_APP_URL: ${NEXT_PUBLIC_APP_URL}
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
+    # Set envrionment variables based on the .env file
+    env_file:
+      - .env
+    restart: always
+
+  # Add more containers below (nginx, postgres, etc.)
+  nginx:
+    build: ./nginx
+    ports:
+      - '80:80'
