@@ -24,7 +24,7 @@ interface SelectWithSearchProps extends InputProps {
 }
 
 const SelectWithSearch = forwardRef<HTMLInputElement, SelectWithSearchProps>(
-  ({ className, value, size, label, data, onValueChange, ...props }, ref) => {
+  ({ className, value, size, label, placeholder = 'Please select', data, onValueChange, ...props }, ref) => {
     const [open, setOpen] = useState(false);
 
     return (
@@ -36,6 +36,7 @@ const SelectWithSearch = forwardRef<HTMLInputElement, SelectWithSearchProps>(
               onChange={() => null}
               value={value}
               size={size}
+              placeholder={placeholder}
               {...props}
               className={cn(className)}
               ref={ref}

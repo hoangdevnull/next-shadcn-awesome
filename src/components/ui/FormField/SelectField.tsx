@@ -24,6 +24,7 @@ interface Props<T extends FieldValues = FieldValues>
   name: FieldPath<T>;
   defaultValue?: FieldPathValue<T, FieldPath<T>>;
   label?: ReactNode;
+  placeholder?: string;
   required?: boolean;
   fullWidth?: boolean;
   labelClassName?: string;
@@ -42,6 +43,7 @@ const SelectField = <T extends FieldValues>({
   fullWidth,
   className,
   labelClassName,
+  placeholder = 'Please select',
   ...props
 }: Props<T>) => {
   return (
@@ -66,7 +68,7 @@ const SelectField = <T extends FieldValues>({
                       inputSize={inputSize}
                       className={cn(className, { 'w-full': fullWidth })}
                     >
-                      <SelectValue />
+                      <SelectValue placeholder={placeholder} />
                     </SelectTrigger>
                   </div>
                 </FormControl>
